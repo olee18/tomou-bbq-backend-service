@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+ lotto-auth-service:
+    image: go-starter-auth
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - 9922:9922
